@@ -1,10 +1,10 @@
 ![Go version](https://img.shields.io/badge/Go-v1.15-blue)
 ![GitHub license](https://img.shields.io/badge/license-Apache%202-blueviolet)
-
+---
 ![RanGo Logo](https://raw.githubusercontent.com/YektaDev/RanGo/main/res/RanGo_small.jpg "RanGo!")
 
 # RanGo
-A **time-independant** safe _random number/string generator_.
+A **time-independant** safe random _number/string_ generator.
 
 ## Installation
 **First:**
@@ -15,10 +15,11 @@ go get github.com/YektaDev/RanGo
 ```go
 import "github.com/YektaDev/RanGo"
 ```
+
 ## Simple Usage
 Here's all you need to do in order to:
 
-### Generate a random int:
+### ▪Generate a random int:
 **Use:**
 ```go
 RanGo.RnInt(startIncluded int, endNotIncluded int)
@@ -27,7 +28,8 @@ Example:
 ```go
 r := RanGo.RnInt(0,8)  //r ϵ {0,1,2,...,7,8}
 ```
-### Generate a random string from a set of characters:
+
+### ▪Generate a random string from a set of characters:
 **Use:**
 ```go
 RanGo.RnStringFrom(length int, chars string)
@@ -36,7 +38,8 @@ Example:
 ```go
 r := RanGo.RnStringFrom(8,"abcd")  //r (example): "dadaadbb"
 ```
-### Generate a random string:
+
+### ▪Generate a random string:
 **Use:**
 ```go
 RanGo.RnString(length int, containsLowercase bool, containsUppercase bool, containsNumber bool, containsSpecial bool)
@@ -51,6 +54,7 @@ r := RanGo.RnString(18,true,false,false,false)  //r (example): "jzoqagpchhsyhotv
 ```go
 r := RanGo.RnString(18,false,false,true,false)  //r (example): "325803510203358683"
 ```
+
 ## More Options
 If the above functions face an error while generating a _time-independent_ seed, the seed will be automatically generated using ```time.Now().UnixNano()```. If you need to know whether the seed is generated _time-dependent_ or _time-independent_, then use the following functions:
 * **```RandomInt()```** instead of ```RnInt()```.
