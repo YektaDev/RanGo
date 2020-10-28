@@ -26,7 +26,7 @@ RanGo.RnInt(startIncluded int, endNotIncluded int)
 ```
 Example:
 ```go
-r := RanGo.RnInt(0,8)  //r ϵ {0,1,2,...,7,8}
+r := RanGo.RnInt(0,8)  //r ϵ {0,1,2,...,6,7}
 ```
 
 ### ▪Generate a random string from a set of characters:
