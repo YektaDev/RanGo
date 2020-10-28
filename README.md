@@ -9,11 +9,11 @@ A **time-independent** random _number_/_string_ generator.
 ## Installation
 **First:**
 ```
-go get github.com/YektaDev/RanGo
+go get github.com/yektadev/rango
 ```
 **Then, add the dependency to your code:**
 ```go
-import "github.com/YektaDev/RanGo"
+import "github.com/yektadev/rango"
 ```
 
 ## Simple Usage
