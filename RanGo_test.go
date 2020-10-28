@@ -1,4 +1,4 @@
-package RanGo
+package rango
 
 import (
 	"testing"
