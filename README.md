@@ -1,17 +1,17 @@
 ![Go version](https://img.shields.io/badge/Go-v1.15-blue)
 ![GitHub license](https://img.shields.io/badge/license-Apache%202-blueviolet)
 
-<img src="https://raw.githubusercontent.com/YektaDev/RanGo/main/res/RanGo.jpg" alt="RanGo!" width="500">
+![RanGo Logo](https://raw.githubusercontent.com/YektaDev/RanGo/main/res/RanGo_small.jpg "RanGo!")
 
 # RanGo
-A **time-independant** safe random number/string generator.
+A **time-independant** safe _random number/string generator_.
 
 ## Installation
-First:
+**First:**
 ```
 go get github.com/YektaDev/RanGo
 ```
-Then, add the dependency to your code:
+**Then, add the dependency to your code:**
 ```go
 import "github.com/YektaDev/RanGo"
 ```
@@ -51,3 +51,10 @@ r := RanGo.RnString(18,true,false,false,false)  //r (example): "jzoqagpchhsyhotv
 ```go
 r := RanGo.RnString(18,false,false,true,false)  //r (example): "325803510203358683"
 ```
+## More Options
+If the above functions face an error while generating a _time-independent_ seed, the seed will be automatically generated using ```time.Now().UnixNano()```. If you need to know whether the seed is generated _time-dependent_ or _time-independent_, then use the following functions:
+* **```RandomInt()```** instead of ```RnInt()```.
+* **```RandomStringFrom()```** instead of ```RnStringFrom()```.
+* **```RandomString()```** instead of ```RnString()```.
+
+In case of using these functions, you'll have **```isSeedTimeDependent```** boolean as the second returned output.
