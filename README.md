@@ -62,3 +62,7 @@ If the above functions face an error while generating a _time-independent_ seed,
 * **```RandomString()```** instead of ```RnString()```.
 
 In case of using these functions, you'll have **```isSeedTimeDependent```** boolean as the second returned output.
+
+---
+
+Special thanks to _John Leidegren_'s answer on _[Stack Overflow](https://stackoverflow.com/a/54491783/6155559)_.
