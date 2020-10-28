@@ -1,9 +1,10 @@
 [![Go version](https://img.shields.io/badge/Go-v1.15-blue)](#)
+[![Go coverage](https://img.shields.io/badge/Go%20Coverage-85.9%25-brightgreen)](#)
 [![GitHub license](https://img.shields.io/badge/license-Apache%202-blueviolet)](#)
 ---
 [![RanGo Logo](https://raw.githubusercontent.com/YektaDev/RanGo/main/res/RanGo_small.jpg "RanGo!")](#)
 
-# RanGo
+# 🦎RanGo
 A **time-independent** random _number_/_string_ generator.
 
 ## 📦Installation
