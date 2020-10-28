@@ -6,7 +6,7 @@
 # RanGo
 A **time-independent** random _number_/_string_ generator.
 
-## Installation
+## 📦Installation
 **First:**
 ```
 go get github.com/yektadev/rango
@@ -16,10 +16,10 @@ go get github.com/yektadev/rango
 import "github.com/yektadev/rango"
 ```
 
-## Simple Usage
+## 📝Simple Usage
 Here's all you need to do in order to:
 
-### ▪Generate a random int:
+### 🔺Generate a random int:
 **Use:**
 ```go
 RanGo.RnInt(startIncluded int, endNotIncluded int)
@@ -29,7 +29,7 @@ Example:
 r := RanGo.RnInt(0,8)  //r ϵ {0,1,2,...,6,7}
 ```
 
-### ▪Generate a random string from a set of characters:
+### 🔺Generate a random string from a set of characters:
 **Use:**
 ```go
 RanGo.RnStringFrom(length int, chars string)
@@ -39,7 +39,7 @@ Example:
 r := RanGo.RnStringFrom(8,"abcd")  //r (example): "dadaadbb"
 ```
 
-### ▪Generate a random string:
+### 🔺Generate a random string:
 **Use:**
 ```go
 RanGo.RnString(length int, containsLowercase bool, containsUppercase bool, containsNumber bool, containsSpecial bool)
@@ -55,7 +55,7 @@ r := RanGo.RnString(18,true,false,false,false)  //r (example): "jzoqagpchhsyhotv
 r := RanGo.RnString(18,false,false,true,false)  //r (example): "325803510203358683"
 ```
 
-## More Options
+## 🔧More Options
 If the above functions face an error while generating a _time-independent_ seed, the seed will be automatically generated using ```time.Now().UnixNano()```. If you need to know whether the seed is generated _time-dependent_ or _time-independent_, then use the following functions:
 * **```RandomInt()```** instead of ```RnInt()```.
 * **```RandomStringFrom()```** instead of ```RnStringFrom()```.
