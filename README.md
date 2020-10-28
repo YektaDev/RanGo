@@ -4,7 +4,7 @@
 [![RanGo Logo](https://raw.githubusercontent.com/YektaDev/RanGo/main/res/RanGo_small.jpg "RanGo!")](#)
 
 # RanGo
-A **time-independant** safe random _number/string_ generator.
+A **safe time-independent** random _number_/_string_ generator.
 
 ## Installation
 **First:**
