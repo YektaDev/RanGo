@@ -66,3 +66,4 @@ In case of using these functions, you'll have **```isSeedTimeDependent```** bool
 ---
 
 ###### Special thanks to _John Leidegren_ because of [this](https://stackoverflow.com/a/54491783/6155559) answer on _Stack Overflow_.
+[![forthebadge](https://forthebadge.com/images/badges/it-works-why.svg)](https://forthebadge.com)
