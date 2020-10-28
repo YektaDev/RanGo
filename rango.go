@@ -121,11 +121,8 @@ func rnInit() (isSeedTimeDependent bool) {
 	if err != nil {
 		log.Println("Unable to generate seed with cryptographically secure random number generator. Time-dependent seed has been used instead.")
 		mathRand.Seed(time.Now().UnixNano())
-
 		return true
-	} else {
-		mathRand.Seed(int64(binary.LittleEndian.Uint64(b[:])))
-
-		return false
 	}
+	mathRand.Seed(int64(binary.LittleEndian.Uint64(b[:])))
+	return false
 }
