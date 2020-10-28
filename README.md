@@ -65,4 +65,4 @@ In case of using these functions, you'll have **```isSeedTimeDependent```** bool
 
 ---
 
-Special thanks to _John Leidegren_'s answer on _[Stack Overflow](https://stackoverflow.com/a/54491783/6155559)_.
+###### Special thanks to [_John Leidegren_'s answer](https://stackoverflow.com/a/54491783/6155559) on _Stack Overflow_.
