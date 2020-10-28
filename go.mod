@@ -1,3 +1,3 @@
-module github.com/YektaDev/RanGo
+module github.com/yektadev/rango
 
 go 1.15
