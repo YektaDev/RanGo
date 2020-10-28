@@ -21,25 +21,25 @@ Here's all you need to do in order to:
 ### Generate a random int:
 **Use:**
 ```go
-RnInt(startIncluded int, endNotIncluded int)
+RanGo.RnInt(startIncluded int, endNotIncluded int)
 ```
 Example:
 ```go
-r := RnInt(0,8)  //r ϵ {0,1,2,...,7,8}
+r := RanGo.RnInt(0,8)  //r ϵ {0,1,2,...,7,8}
 ```
 ### Generate a random string from a set of characters:
 **Use:**
 ```go
-RnStringFrom(length int, chars string)
+RanGo.RnStringFrom(length int, chars string)
 ```
 Example:
 ```go
-r := RnStringFrom(8,"abcd")  //r (example): "dadaadbb"
+r := RanGo.RnStringFrom(8,"abcd")  //r (example): "dadaadbb"
 ```
 ### Generate a random string:
 **Use:**
 ```go
-RnString(length int, containsLowercase bool, containsUppercase bool, containsNumber bool, containsSpecial bool)
+RanGo.RnString(length int, containsLowercase bool, containsUppercase bool, containsNumber bool, containsSpecial bool)
 ```
 Examples:
 ```go
