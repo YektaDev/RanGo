@@ -14,7 +14,7 @@ var charsUppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 var charsNumber = "0123456789"
 var charsSpecial = "[](){}^;:#?.,&|!~`_%$@\"'=+-*/\\ <>"
 
-//Generate a random int
+//RnInt generates a random int
 func RnInt(startIncluded int, endNotIncluded int) (randomInt int) {
 	rnInit()
 	randomInt = startIncluded + mathRand.Intn(endNotIncluded-startIncluded)
@@ -22,7 +22,7 @@ func RnInt(startIncluded int, endNotIncluded int) (randomInt int) {
 	return randomInt
 }
 
-//Generate a random int
+//RandomInt generates a random int
 func RandomInt(startIncluded int, endNotIncluded int) (randomInt int, isSeedTimeDependent bool) {
 	isSeedTimeDependent = rnInit()
 	randomInt = startIncluded + mathRand.Intn(endNotIncluded-startIncluded)
@@ -30,7 +30,7 @@ func RandomInt(startIncluded int, endNotIncluded int) (randomInt int, isSeedTime
 	return randomInt, isSeedTimeDependent
 }
 
-//Generate a random string
+//RnString generates a random string
 func RnString(length int, containsLowercase bool, containsUppercase bool, containsNumber bool, containsSpecial bool) (randomString string) {
 	if !containsLowercase && !containsUppercase && !containsNumber && !containsSpecial {
 		return ""
@@ -63,7 +63,7 @@ func RnString(length int, containsLowercase bool, containsUppercase bool, contai
 	return string(b)
 }
 
-//Generate a random string
+//RandomString generates a random string
 func RandomString(length int, containsLowercase bool, containsUppercase bool, containsNumber bool, containsSpecial bool) (randomString string, isSeedTimeDependent bool) {
 	if !containsLowercase && !containsUppercase && !containsNumber && !containsSpecial {
 		return "", false
@@ -96,7 +96,7 @@ func RandomString(length int, containsLowercase bool, containsUppercase bool, co
 	return string(b), isSeedTimeDependent
 }
 
-//Generate a random string with the given characters
+//RnStringFrom generates a random string with the given characters
 func RnStringFrom(length int, chars string) (randomString string) {
 	if length < 1 {
 		return ""
@@ -111,7 +111,7 @@ func RnStringFrom(length int, chars string) (randomString string) {
 	return string(b)
 }
 
-//Generate a random string with the given characters
+//RandomStringFrom generates a random string with the given characters
 func RandomStringFrom(length int, chars string) (randomString string, isSeedTimeDependent bool) {
 	if length < 1 {
 		return "", false
@@ -126,7 +126,7 @@ func RandomStringFrom(length int, chars string) (randomString string, isSeedTime
 	return string(b), isSeedTimeDependent
 }
 
-//Generate seed
+//rnInit generates random seed
 func rnInit() (isSeedTimeDependent bool) {
 	var b [8]byte
 	_, err := cryptoRand.Read(b[:])
