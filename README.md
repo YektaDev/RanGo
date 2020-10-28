@@ -1,7 +1,7 @@
-![Go version](https://img.shields.io/badge/Go-v1.15-blue)
-![GitHub license](https://img.shields.io/badge/license-Apache%202-blueviolet)
+[![Go version](https://img.shields.io/badge/Go-v1.15-blue)](#)
+[![GitHub license](https://img.shields.io/badge/license-Apache%202-blueviolet)](#)
 ---
-![RanGo Logo](https://raw.githubusercontent.com/YektaDev/RanGo/main/res/RanGo_small.jpg "RanGo!")
+[![RanGo Logo](https://raw.githubusercontent.com/YektaDev/RanGo/main/res/RanGo_small.jpg "RanGo!")](#)
 
 # RanGo
 A **time-independant** safe random _number/string_ generator.
@@ -66,4 +66,4 @@ In case of using these functions, you'll have **```isSeedTimeDependent```** bool
 ---
 
 ###### Special thanks to _John Leidegren_ because of [this](https://stackoverflow.com/a/54491783/6155559) answer on _Stack Overflow_.
-<img src="https://forthebadge.com/images/badges/it-works-why.svg">
+[![](https://forthebadge.com/images/badges/it-works-why.svg)](#)
