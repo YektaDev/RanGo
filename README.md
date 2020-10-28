@@ -1,3 +1,4 @@
+[![Go Report Card](https://goreportcard.com/badge/github.com/yektadev/rango)](https://goreportcard.com/report/github.com/yektadev/rango)
 [![Go version](https://img.shields.io/badge/Go-v1.15-blue)](#)
 [![Go coverage](https://img.shields.io/badge/Go%20Coverage-85.9%25-brightgreen)](#)
 [![GitHub license](https://img.shields.io/badge/license-Apache%202-blueviolet)](#)
